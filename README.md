@@ -1,6 +1,7 @@
 # vue-manager
 
-[线上地址](http://panjiachen.github.io/vueAdmin-template)
+[线上地址]: https://firecodes.github.io/vue-manager/
+
 > vue-manager  admin system
 
 ## Build Setup
