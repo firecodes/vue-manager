@@ -1,6 +1,6 @@
 # vue-manager
 
-[ÏßÉÏµØÖ·](http://panjiachen.github.io/vueAdmin-template)
+[çº¿ä¸Šåœ°å€](http://panjiachen.github.io/vueAdmin-template)
 > vue-manager  admin system
 
 ## Build Setup
