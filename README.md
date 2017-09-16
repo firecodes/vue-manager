@@ -1,14 +1,18 @@
 # vue-manager
 
-> vue-manager test admin system
+[ÏßÉÏµØÖ·](http://panjiachen.github.io/vueAdmin-template)
+> vue-manager  admin system
 
 ## Build Setup
 
 ``` bash
+# Clone project
+git clone https://github.com/firecodes/vue-manager.git
+
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:8686
 npm run dev
 
 # build for production with minification
@@ -18,4 +22,4 @@ npm run build
 npm run build --report
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
