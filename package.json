@@ -28,6 +28,7 @@
     "sortablejs": "1.5.1",
     "vue": "^2.4.2",
     "vue-count-to": "1.0.5",
+    "vue-i18n": "^7.3.0",
     "vue-multiselect": "2.0.2",
     "vue-router": "^2.7.0",
     "vue-splitpane": "^1.0.0",
