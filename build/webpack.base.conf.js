@@ -24,6 +24,7 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
       'src': path.resolve(__dirname, '../src'),
+      'global': path.resolve(__dirname, '../src/global'),
       'assets': path.resolve(__dirname, '../src/assets'),
       'components': path.resolve(__dirname, '../src/components'),
       'views': path.resolve(__dirname, '../src/views'),
@@ -37,6 +38,13 @@ module.exports = {
       'static': path.resolve(__dirname, '../static')
     }
   },
+    externals: {
+        // jquery: 'jQuery'
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+        'window.$': 'jquery',
+    },
   module: {
     rules: [
       // {
