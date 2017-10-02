@@ -1,6 +1,6 @@
 <template>
   <div>
-      <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+      <el-menu theme="dark" :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
         <el-menu-item index="1">{{ $t('message.home') }}</el-menu-item>
         <el-submenu index="2">
           <template slot="title">{{ $t('message.user') }}</template>
@@ -10,32 +10,34 @@
         </el-submenu>
         <el-menu-item index="3">{{ $t('message.pCenter') }}</el-menu-item>
       </el-menu>
-      <el-button @click="changeLanguage">{{languageTitle}}</el-button>
+      <navbar></navbar>
     </Menu>
-        <p>{{ $i18n.locale }}</p>
-        <p>{{ $i18n.locale }}</p>
-        <p>{{ $i18n.locale }}</p>
+<div>
+  <el-button round>圆形按钮</el-button>
+  <el-button type="primary" round>主要按钮</el-button>
+  <el-button type="success" round>成功按钮</el-button>
+  <el-button type="info" round>信息按钮</el-button>
+  <el-button type="warning" round>警告按钮</el-button>
+  <el-button type="danger" round>危险按钮</el-button>
+</div>
     <router-view></router-view>
+
   </div>
 </template>
 <script>
+  import { global } from 'src/global/global';
+  import navbar from './Navbar';
+  import { toggleClass } from '@/utils'
   export default {
+    components: { navbar },
     data() {
       return {
         activeIndex: '1',
-        languageTitle: '中文',
       }
     },
     methods: {
-      changeLanguage : function () {
-        if(this.languageTitle === "中文") {
-          this.languageTitle = "EN"
-          this.$i18n.locale = "zh-CN";
-        }else if(this.languageTitle === "EN") {
-          this.languageTitle = "中文"
-          this.$i18n.locale = "en-US";
-        }
-        // this.$router.push({path: '/i18N'})
+      theme() {
+        
       }
     }
   } 
