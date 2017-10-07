@@ -25,7 +25,7 @@ export  const global = {
             var html = document.getElementsByTagName('html')[0];
             toggleClass(html, "lang-"+lang);
             var oldLang= localStorage.getItem('ELEMENT_LANGUAGE');
-            if(oldLang){
+            if(oldLang && oldLang != lang){
                 toggleClass(html, "lang-"+oldLang);
             }
             localStorage.setItem('ELEMENT_LANGUAGE', lang);

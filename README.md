@@ -7,8 +7,8 @@
 
 
 # 实行功能
-1. 中英文切换
-2. 主题样式切换
+1. 中英文切换。 （html 加 class: lang-zh-CN 或 lang-en-US）
+2. 主题样式切换 （body 加 class: theme-blue 、 theme-red 等 ）
 后续功能依次增加
 
 # 感谢其余开源项目支持，本项目功能基于以下项目优化（开源因你更精彩）
@@ -51,26 +51,31 @@ npm run build --report
     --color-primary: red;  //yellow \blu \red 等
 -----------------------------------------------------
     将主题文件输出目录
+    et -w -o ./static/theme/green/
     et -w -o ./static/theme/default/
+    et -w element-blue.css -o ./static/theme/blue/
+    et -w element-green.css -o ./static/theme/green/
     et -w element-red.css -o ./static/theme/red/
     et -w element-yellow.css -o ./static/theme/yellow/
-    et -w element-blue.css -o ./static/theme/blue/
 
     //main.js 加入以下代码查看界面效果
+    import 'theme/blue/index.css'
+    import 'theme/green/index.css'
     import 'theme/red/index.css'
     import 'theme/yellow/index.css'
-    import 'theme/blue/index.css'
 ---------------------------------------------------------------------------------
     采用gulp在index.css 所有样式外层加class名称。（例如：.link{} 打包为 .red-theme .link）
     相关包文件: npm i gulp gulp-clean-css gulp-css-wrap run-sequence --save-dev
     测试环境:
+    src/assets/theme/blue/
+    src/assets/theme/green/
     src/assets/theme/red/
     src/assets/theme/yellow/
-    src/assets/theme/blue/
     开发环境:
+    dist/blue/
+    dist/green/
     dist/red/
     dist/yellow/
-    dist/blue/
 ---------------------------------------------------------------------------------
 
 
