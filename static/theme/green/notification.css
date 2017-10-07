@@ -130,7 +130,7 @@
 .el-notification__title{
     font-weight: 400;
     font-size: 16px;
-    color: rgb(58, 61, 31);
+    color: rgb(31, 61, 34);
     margin: 0;
 }
 
@@ -138,7 +138,7 @@
     font-size: 14px;
     line-height: 21px;
     margin: 10px 0 0 0;
-    color: rgb(160, 165, 131);
+    color: rgb(131, 165, 136);
     text-align: justify;
 }
 
@@ -156,12 +156,12 @@
     right: 20px;
     position: absolute;
     cursor: pointer;
-    color: rgb(215, 217, 191);
+    color: rgb(191, 217, 193);
     font-size: 14px;
 }
 
 .el-notification__closeBtn:hover{
-    color: rgb(184, 190, 151);
+    color: rgb(151, 190, 157);
 }
 
 .el-notification-fade-enter {
