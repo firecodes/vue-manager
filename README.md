@@ -3,8 +3,7 @@
 [线上地址]: https://firecodes.github.io/vue-manager/
 
 # 后台管理系统 vue-manager  admin system
-使用到的技术栈：vue2 +axios + vue-router + vue-i18n + vuex(spa必备) + element-ui + ES6 + webpack 
-node版本是8.0
+使用到的技术栈：node8.0+ vue2 +axios + vue-router + vue-i18n + vuex(spa必备) + element-ui + ES6 + webpack
 
 # 实行功能
 1. 中英文切换。 （html 加 class: lang-zh-CN 或 lang-en-US）
